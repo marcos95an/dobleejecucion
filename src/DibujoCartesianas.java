@@ -11,23 +11,26 @@ public class DibujoCartesianas {
     //Método a modificar. x e y están entre 0 y 1.
     //El origen (0,0) está en la esquina inferior izquierda
 
-    public static Color crear3franjas(double x, double y) {
+   // public static Color crear3franjas(double x, double y) {
 
 
 
-    }
+   // }
 
-    public static Color crear3columnas(double x, double y) {
-
-        
+   // public static Color crear3columnas(double x, double y) {
 
 
-    }
+
+
+   // }
 
 
     private static Color devuelveColor(double x, double y) {
-        if (x < 0.23) {
+        if (x < 0.23&&y<0.50) {
             return new Color(5, 11, 198);
+        }
+        if (x > 0.23&&y>0.50) {
+            return new Color(198, 0, 8);
         }
 
         if (y < 0.22 && y > 0.11) {
